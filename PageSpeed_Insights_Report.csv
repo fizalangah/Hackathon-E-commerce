@@ -1,0 +1,10 @@
+Metric,Value,Suggestions
+Performance,76,"Optimize images, Defer offscreen images, Serve images in next-gen formats"
+Accessibility,100,N/A
+Best Practices,100,N/A
+SEO,76,"Add structured data, Improve meta tags"
+First Contentful Paint (FCP),1.2 s,N/A
+Largest Contentful Paint (LCP),4.6 s,"Reduce image size, Optimize critical rendering path"
+Total Blocking Time (TBT),30 ms,N/A
+Cumulative Layout Shift (CLS),0.137,"Avoid layout shifts, Define size attributes for images"
+Speed Index (SI),4.5 s,"Reduce render-blocking resources, Minimize main thread work"
