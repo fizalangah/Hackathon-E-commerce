@@ -143,7 +143,7 @@ const CartPage = () => {
                   <button className="w-full bg-black text-white py-3 rounded-md mb-4 hover:bg-gray-800">
                     Apply
                   </button>
-                  <Link href={"/checkOut"}>
+                  <Link href={"/checkout"}>
                     <button className="w-full bg-black text-white py-3 rounded-md hover:bg-gray-800">
                       Go to Checkout
                     </button>
