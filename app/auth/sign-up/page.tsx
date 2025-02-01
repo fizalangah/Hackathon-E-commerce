@@ -159,7 +159,7 @@ export default function SignUp() {
   
   return (
     <div className="flex items-center justify-center min-h-[300px] bg-gray-50 mb-6">
-      <div className="bg-white shadow-2xl p-10 rounded-lg border-2 border-yellow-600 w-full max-w-[700px]">
+      <div className="bg-white shadow-2xl p-10 rounded-lg border-2 border-black w-full max-w-[700px]">
         <h1 className="text-xl md:text-3xl lg:text-3xl font-extrabold text-gray-900 text-center mb-8 flex items-center justify-center">
           <FaUserCircle className="mr-2 text-xl md:text-3xl lg:text-3xl" />
           Create Account
@@ -241,7 +241,7 @@ export default function SignUp() {
           {/* Submit Button */}
           <button
             type="submit"
-            className="w-full bg-yellow-600 text-white font-semibold text-lg py-3 rounded-lg hover:bg-yellow-700 transition duration-300"
+            className="w-full bg-black text-white font-semibold text-lg py-3 rounded-lg hover:bg-black transition duration-300"
           >
             Create Account
           </button>

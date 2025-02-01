@@ -97,7 +97,7 @@ export default function SignIn() {
           {/* Submit Button */}
           <button
             type="submit"
-            className="bg-yellow-600 text-white font-bold cursor-pointer px-6 py-3 rounded-lg hover:bg-yellow-700 transition duration-300"
+            className="bg-black text-white font-bold cursor-pointer px-6 py-3 rounded-lg hover:bg-gray-700 transition duration-300"
           >
             Sign In
           </button>

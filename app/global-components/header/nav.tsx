@@ -145,7 +145,7 @@ export default function Navbar() {
         
      {/* new  */}
      {session ? (
-            <div className="text-yellow-600 font-bold text-[16px] md:text-[16px] lg:text-[20px] flex justify-center flex-row gap-2 md:gap-0 mb-2">
+            <div className="text-black font-bold text-[16px] md:text-[16px] lg:text-[20px] flex justify-center flex-row gap-2 md:gap-0 mb-2">
               {session.user.email === user ? (
                 <>
                   <Link href={"/adminPanel"}>Admin</Link>
