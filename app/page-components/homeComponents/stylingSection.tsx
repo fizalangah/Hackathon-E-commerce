@@ -56,7 +56,7 @@ export default function BrowseByStyle() {
         ))}
       </div>
 
-      <div className="flex justify-center gap-10 lg:flex-row flex-col items-center ">
+      <div className="flex justify-center gap-10 lg:flex-row flex-col items-center w-full ">
         {/* Mapping next two images */}
         {data.slice(2, 4).map((image, index) => (
           <div

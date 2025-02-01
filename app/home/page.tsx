@@ -13,6 +13,8 @@ import { client } from '../../sanity/lib/client';
 import ArrivalSection from '../page-components/homeComponents/arrivalSection';
 import SellingSection from '../page-components/homeComponents/sellingSection';
 import BrowseByStyle from '../page-components/homeComponents/stylingSection';
+import { log } from 'node:console';
+import Footer from '../global-components/footer';
 
 
  
@@ -37,6 +39,8 @@ export default function Homepage() {
           }
         `);
         setData(data);
+        console.log(data,"data");
+        
       } catch (error) {
         console.error("Error fetching products:", error);
       }
@@ -178,6 +182,7 @@ export default function Homepage() {
    
     <CustomerCarousel/>
     </div>
+    <Footer /> 
     </main>
   );
 }

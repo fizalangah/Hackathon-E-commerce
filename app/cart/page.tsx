@@ -1,10 +1,46 @@
 "use client";
-import { useState, useEffect } from "react";
+
+
 import Link from "next/link";
+import { useSession } from "next-auth/react";
+import { useRouter } from "next/navigation";
+import { useState,useEffect } from "react";
+import Footer from "../global-components/footer";
 
 const CartPage = () => {
   const [cartItems, setCartItems] = useState([])
+  // const router = useRouter();
+// const isAuthenticated = localStorage.getItem("user"); // Replace with actual authentication logic
+// const { data: session } = useSession();
+const { data: session } = useSession();
+const router = useRouter();
+const [mounted, setMounted] = useState(false);
+const [loading, setLoading] = useState<boolean>(true);
 
+// useEffect(() => {
+//   setMounted(true);
+// }, []);
+
+
+// if (!mounted) {
+//   return null; 
+// }
+
+
+const redirectHnadler = () => {
+  if (session) {
+    router.push("/checkout");
+  } else {
+    router.push("/auth/sign-in");
+  }
+};
+// const redirectHnadler = () => {
+//   if (session) {
+//     router.push("/checkout");
+//   } else {
+//     router.push("/auth/sign-in");
+//   }
+// };
   // Fetch cart items from localStorage on component mount
   useEffect(() => {
     const cart = JSON.parse(localStorage.getItem("cart")) || [];
@@ -143,11 +179,11 @@ const CartPage = () => {
                   <button className="w-full bg-black text-white py-3 rounded-md mb-4 hover:bg-gray-800">
                     Apply
                   </button>
-                  <Link href={"/checkout"}>
-                    <button className="w-full bg-black text-white py-3 rounded-md hover:bg-gray-800">
-                      Go to Checkout
-                    </button>
-                  </Link>
+                  <button className="w-full bg-black text-white py-3 rounded-md mb-4 hover:bg-gray-800"
+            onClick={redirectHnadler}>
+          
+            <Link href="/checkout">Checkout</Link>
+          </button>
                 </div>
               </div>
             </div>
@@ -156,7 +192,11 @@ const CartPage = () => {
           <p>Your cart is empty.</p>
         )}
       </div>
+      <Footer /> 
+
     </div>
+    
+      
   );
 };
 

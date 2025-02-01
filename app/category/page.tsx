@@ -6,6 +6,7 @@ import Link from "next/link";
 import Filter from "../page-components/filter";
 import { client } from "../../sanity/lib/client";
 import { useEffect, useState } from "react";
+import Footer from "../global-components/footer";
 
 const CategoryPage = () => {
   
@@ -54,6 +55,7 @@ const CategoryPage = () => {
   
   
   return (
+    <>
     <div className="max-w-screen-xl mx-auto flex mt-20 lg:flex-row flex-col-reverse bg-white mb-10 gap-5">
       <div className=" lg:w-1/4">
 <Filter/>
@@ -98,7 +100,10 @@ const CategoryPage = () => {
         ))}
       </div>
       </div>
+    
     </div>
+    <Footer/> 
+     </>
   );
 };
 

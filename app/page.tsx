@@ -4,16 +4,28 @@ import Homepage from './home/page'
 import CategoryPage from './category/page'
 import CartPage from './cart/page'
 
-function Mainpage() {
+
+import { getServerSession } from "next-auth";
+import { redirect } from "next/navigation";
+import Footer from './global-components/footer'
+// import { authOptions } from './api/[...nextauth]/route'
+// import LoginForm from '../components/Loginform'
+// import Loginpage from './login/page'
+
+export default function Mainpage() {
+  // const session = getServerSession(authOptions);
+  // if (session) redirect("/")
+    
+  
   return (
     <div>
+          <Homepage/>
+          {/* <CategoryPage/>
+          <CartPage/>
+          <Footer />  */}
 
-  <Homepage/>
-  <CategoryPage/>
-  <CartPage/>
+          {/* <Loginpage/> */}
         
     </div>
   )
 }
-
-export default Mainpage

@@ -1,5 +1,6 @@
 "use client";
 import React, { useState } from "react";
+import Footer from "../global-components/footer";
 
 const CheckoutForm = () => {
   const [formData, setFormData] = useState({
@@ -172,6 +173,7 @@ const CheckoutForm = () => {
           </button>
         </form>
       </div>
+      {/* <Footer />  */}
     </div>
   );
 };

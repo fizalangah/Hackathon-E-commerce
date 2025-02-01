@@ -4,6 +4,8 @@ import "./globals.css";
 import Header from "./global-components/header/head";
 import Footer from "./global-components/footer";
 import Navbar from "./global-components/header/nav";
+import AuthProvider from "./provider";
+
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -27,14 +29,20 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
+    <AuthProvider>
     <html lang="en">
+
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >  <Header/>
       <Navbar/>
+    
         {children}
-        <Footer/>
+       
+       {/* <Footer />  */}
       </body>
     </html>
+    </AuthProvider>
+
   );
 }
