@@ -88,9 +88,9 @@ export default function Navbar() {
           <Link href="/brands">Brands</Link>
         </div>
 
-        <div className="flex items-center gap-2 ">
+        <div className="flex items-center gap-2 lg:gap-6 ">
           <button onClick={handleSearchClick}>
-            <CiSearch className="text-xl lg:hidden font-bold" />
+            <CiSearch className="text-xl  font-bold" />
           </button>
 
           {showSearchBar && <SearchBar /> } {/* Show SearchBar only when showSearchBar is true */}
