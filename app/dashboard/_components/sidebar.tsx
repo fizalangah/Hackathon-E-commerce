@@ -57,7 +57,7 @@ const Sidebar: React.FC = () => {
         {/* Navigation Links */}
         <nav className="flex flex-col p-4 space-y-4">
            <Link
-            href="/dashboard"
+            href="/dashboard/profile"
             className="flex items-center  text-white hover:bg-black px-4 py-2 rounded-md "
           >
             <FaUser className="mr-4 text-xl" />
@@ -78,26 +78,26 @@ const Sidebar: React.FC = () => {
             <span className="">Security</span>
           </Link>
           <Link
-            href="/dashboard/wishlist"
+            href="/dashboard/whishlist"
             className="flex items-center  text-white hover:bg-black px-4 py-2 rounded-md "
           >
             <FaHeart className="mr-4 text-xl" />
             <span className="">Wishlist</span>
           </Link>
           <Link
-            href="/dashboard/payment-methods"
+            href="/dashboard/payment"
             className="flex items-center  text-white hover:bg-black px-4 py-2 rounded-md "
           >
             <FaCreditCard className="mr-4 text-xl" />
             <span className="">Payment Methods</span>
           </Link>
-          <Link
+          {/* <Link
             href="/dashboard/addresses"
             className="flex items-center  text-white hover:bg-black px-4 py-2 rounded-md "
           >
             <FaMapMarkedAlt className="mr-4 text-xl" />
             <span className="">Addresses</span>
-          </Link>
+          </Link> */}
 
           <button
             onClick={handleLogout}

@@ -33,13 +33,13 @@ export default function Filter() {
       });
   return (
     <div>
-<div className=" h-full bg-gray-100 p-5 flex flex-col space-y-5 border rounded">
+<div className=" h-full bg-gray-200 p-5 flex flex-col space-y-5 border rounded">
 
-<h2 className="text-xl font-bold">Filter</h2>
+<h2 className="text-xl font-bold text-black">Filter</h2>
 
 {/* Product Names */}
 <div className="border-b">
-  <h3 className="font-bold mb-2">Products</h3>
+  <h3 className="font-bold mb-2 text-black">Products</h3>
   <ul className="space-y-4">
     {products.map((product) => (
       <li key={product.id} className="text-gray-700">
@@ -51,7 +51,7 @@ export default function Filter() {
 
 {/* Price Slider */}
 <div className="border-b">
-  <h3 className="font-bold mb-2">Price</h3>
+  <h3 className="font-bold mb-2 text-black">Price</h3>
   <input
     type="range"
     min="50"
@@ -65,7 +65,7 @@ export default function Filter() {
 
 {/* Colors */}
 <div className="border-b">
-  <h3 className="font-bold mb-2">Colors</h3>
+  <h3 className="font-bold mb-2 text-black">Colors</h3>
   <div className="grid grid-cols-4 gap-2">
     {colors.map((color, index) => (
       <button
@@ -82,14 +82,14 @@ export default function Filter() {
 
 {/* Sizes */}
 <div className="border-b">
-  <h3 className="font-bold mb-2">Sizes</h3>
-  <div className="flex flex-wrap gap-3">
+  <h3 className="font-bold mb-2 text-black">Sizes</h3>
+  <div className="flex flex-wrap gap-3 text-black">
     {sizes.map((size, index) => (
       <button
         key={index}
         onClick={() => setSelectedSize(size)}
         className={`border px-3 py-1 rounded ${
-          selectedSize === size ? "bg-gray-300" : ""
+          selectedSize === size ? "bg-white" : ""
         }`}
       >
         {size}
@@ -100,8 +100,8 @@ export default function Filter() {
 
 {/* Dress Style */}
 <div className="border-b">
-  <h3 className="font-bold mb-2">Dress Style</h3>
-  <div className="flex flex-col space-y-2">
+  <h3 className="font-bold mb-2 text-black">Dress Style</h3>
+  <div className="flex flex-col space-y-2 text-black">
     {dressStyles.map((style, index) => (
       <button
         key={index}
@@ -119,7 +119,7 @@ export default function Filter() {
 {/* Apply Filter Button */}
 <button
   onClick={() => console.log("Filter applied")}
-  className="bg-black text-white py-3 shadow hover:bg-gray-800 transition rounded-2xl"
+  className="bg-black text-white py-3 shadow hover:bg-gray-800 transition rounded-2xl "
 >
   Apply Filter
 </button>

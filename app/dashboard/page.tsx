@@ -267,6 +267,7 @@ import User from "../models/schema";
 import Link from "next/link";
 import Image from "next/image";
 import { MdArrowForwardIos } from "react-icons/md";
+import { FaArrowRightFromBracket } from "react-icons/fa6";
 // import Loader from "@/components/loader/loader";
 interface User {
   _id: string;
@@ -385,7 +386,7 @@ console.log(products,"products");
                <div><strong className="font-semibold text-gray-900">Phone:</strong> {user?.phoneNumber || "Not Provided"}</div>
              </div> */}
              <h2 className="font-bold text-2xl"><span className="text-yellow-500">15%</span><span className="text-red-600">Off</span></h2>
-             <Link href={""}>go And get</Link>
+             <Link href={"/sales"}>go And get</Link>
            </div>
           
 
@@ -397,6 +398,7 @@ console.log(products,"products");
                <div className="mb-2"><div className="font-semibold">Order #12346</div><div className="text-gray-500">Status: Delivered</div><div className="text-gray-500">Total: $199</div></div>
              </div> */}
               <h2  className="text-xl font-bold ">eXplore nEw bRands hEre</h2>
+              <Link href={"/brands"} className="text-2xl flex justify-center items-center mt-10"><FaArrowRightFromBracket /></Link>
            </div>
 
            {/* Security Section */}
@@ -443,7 +445,7 @@ console.log(products,"products");
              <div className="text-sm text-gray-700">
                <div><strong className="font-semibold text-gray-900">Current Template:</strong> Template A</div>
                <div><strong className="font-semibold text-gray-900">Change Template:</strong></div>
-               <button className="text-blue-600 hover:underline">Select Template</button>
+               <button className="text-blue-600 hover:underline"> <Link href={"/whishlist"}>Select Template</Link></button>
              </div>
            </div>
          </div>

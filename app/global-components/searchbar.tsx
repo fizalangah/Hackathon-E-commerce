@@ -49,11 +49,11 @@ export default function SearchBar() {
         placeholder="Search for product"
         value={searchQuery}
         onChange={(e) => setSearchQuery(e.target.value)}
-        className="pl-10 py-1 border w-[300px] border-gray-200 rounded-xl focus:outline-none bg-[#F0F0F0]"
+        className=" py-1 border lg:w-[300px] w-[100px] border-gray-200 rounded-xl focus:outline-none bg-[#F0F0F0]"
       />
-      <span className="absolute inset-y-0 left-2 flex items-center text-gray-400">
+      {/* <span className="absolute inset-y-0 left-2 flex items-center text-gray-400">
         <CiSearch className="text-xl" />
-      </span>
+      </span> */}
 
       {/* Search Results Dropdown */}
       {filteredProducts.length > 0 && (

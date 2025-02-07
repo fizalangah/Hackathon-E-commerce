@@ -82,6 +82,7 @@ const Productsdetail = ({ params }: ProductProps) => {
         imageUrl: product.imageUrl,
         selectedColor,
         selectedSize,
+         quantity : product.quantity || 1
       };
 
       cart.push(productWithSelectedOptions);

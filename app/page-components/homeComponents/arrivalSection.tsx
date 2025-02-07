@@ -35,7 +35,7 @@ export default function ArrivalSection() {
     <div>
 
 <div className='lg:-mt-[200px]   '>
-      <h2 className='text-center  pt-10 text-3xl font-extrabold bg-white  '>NEW ARRIVALS</h2>
+      <h2 className='text-center  pt-10  pb-10 text-3xl font-extrabold bg-white text-black '>NEW ARRIVALS</h2>
         <div className="min-h-screen bg-white flex items-center justify-center lg:-mt-20 flex-col">
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
         {data.map((card, ) => (

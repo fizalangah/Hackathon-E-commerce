@@ -55,7 +55,7 @@ const redirectHnadler = () => {
 
   // Calculate total quantity
   const totalQuantity = cartItems.reduce(
-    (total, item) => total + (item.quantity || 0),
+    (total, item) => total + (item.quantity || 1),
     0
   );
   const removeItem = (productId) => {

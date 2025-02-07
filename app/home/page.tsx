@@ -55,9 +55,9 @@ export default function Homepage() {
     <main className='max-w-screen-xl mx-auto'>
       
       {/* Hero Section */}
-      <div className=" flex flex-col lg:flex-row items-center lg:items-start   ">
+      <div className=" flex flex-col lg:flex-row items-center lg:items-start  ">
         {/* Left Content */}
-        <div className="w-full lg:w-1/2 px-5 lg:px-10 mt-10 lg:mt-[100px] space-y-5">
+        <div className="w-full lg:w-1/2 px-5 lg:px-10 mt-10 lg:mt-[100px] space-y-5 bg-white text-black">
           <h1 className="font-extrabold text-3xl lg:text-6xl text-center lg:text-left">
             FIND CLOTHES THAT MATCHES YOUR STYLE
           </h1>
@@ -67,7 +67,7 @@ export default function Homepage() {
           </p>
           <div className="flex justify-center lg:justify-start">
             <button className="bg-black text-white px-8 py-2 rounded-2xl text-sm">
-              Shop Now
+              <Link href={"/category"}>Shop Now</Link> 
             </button>
           </div>
           <div className="flex flex-wrap gap-5 justify-center lg:justify-start">
